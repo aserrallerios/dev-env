@@ -7,84 +7,84 @@ brew:
   - chruby
   - go
   - rust
-  - hub
-  - unrar
-  - helm
-  - kubectx
-  - kompose
-  - docker-compose
-  - q
-  - jq
-  - tldr
-  - exa
-  - aws-cli
-  - kubectl
-  - vim
-  - neovim
-  - terraform
-  - tmux
-  - terminator
-  - httpie
-  - glances
-  - graphviz
-  - htop
-  - rclone
-  - curl
-  - file
-  - atop
-  - maven
-  - visualvm
-  - make
-  - netdata
-  - cmake
-  - extra-cmake-modules
-  - strace
-  - sbt
-  - stow
-  - pulseaudio-equalizer
-  - gcc
-  - fzf
-  - neofetch
-  - landscaper
-  - jfrog-cli-go
-  - slack-term
-  - syncthing
-  - rclone
-  - dwarf-fortress
-  - typora-alanzanattadev
-  - powershell
-  - git-extras
-  - find-the-command
-  - tmate
+  # - hub
+  # - unrar
+  # - helm
+  # - kubectx
+  # - kompose
+  # - docker-compose
+  # - q
+  # - jq
+  # - tldr
+  # - exa
+  # - aws-cli
+  # - kubectl
+  # - vim
+  # - neovim
+  # - terraform
+  # - tmux
+  # - terminator
+  # - httpie
+  # - glances
+  # - graphviz
+  # - htop
+  # - rclone
+  # - curl
+  # - file
+  # - atop
+  # - maven
+  # - visualvm
+  # - make
+  # - netdata
+  # - cmake
+  # - extra-cmake-modules
+  # - strace
+  # - sbt
+  # - stow
+  # - pulseaudio-equalizer
+  # - gcc
+  # - fzf
+  # - neofetch
+  # - landscaper
+  # - jfrog-cli-go
+  # - slack-term
+  # - syncthing
+  # - rclone
+  # - dwarf-fortress
+  # - typora-alanzanattadev
+  # - powershell
+  # - git-extras
+  # - find-the-command
+  # - tmate
 tap:
   - caskroom/fonts
   - derailed/k9s
 cask:
   - keepassxc
-  - dropbox
-  - docker
-  - k9s
-  - gitkraken
-  - dash
-  - atom
-  - dbeaver-community
-  - spotify
-  - virtualbox
-  - font-hack-nerd-font
-  - visual-studio-code
-  - slack
-  - postman
-  - sublime
-  - altair-graphql-client
-  - gitter
-  - insomnia
-  - code-notes
-  - graphql-playground
-  - kubernetic
-  - caret
-  - oracle-jdk
-  - balenaetcher
-  - evernote
+  #- dropbox
+  #- docker
+  #- k9s
+  #- gitkraken
+  #- dash
+  #- atom
+  #- dbeaver-community
+  #- spotify
+  #- virtualbox
+  #- font-hack-nerd-font
+  #- visual-studio-code
+  #- slack
+  #- postman
+  #- sublime
+  #- altair-graphql-client
+  #- gitter
+  #- insomnia
+  #- code-notes
+  #- graphql-playground
+  #- kubernetic
+  #- caret
+  #- oracle-jdk
+  #- balenaetcher
+  #- evernote
 manual_macos: # This commands need to be idempotent
   - sudo: no
     commands:

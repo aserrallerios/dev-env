@@ -15,26 +15,26 @@ go:
   # - github.com/muesli/beehive
 pip:
   - awscli
-  - virtualenv
-  - http-prompt
-  - git-sweep
-  - markdown
-  - ctop
-  - thefuck
-  - pipdeptree
-  - pip-review
-  - yq
-  - organize-tool
+  # - virtualenv
+  # - http-prompt
+  # - git-sweep
+  # - markdown
+  # - ctop
+  # - thefuck
+  # - pipdeptree
+  # - pip-review
+  # - yq
+  # - organize-tool
 npm:
   - diff-so-fancy
-  - graphqurl
-  - matrix-rain
-  - organize-cli
+  #- graphqurl
+  #- matrix-rain
+  #- organize-cli
   # - api-spec-converter
 gem:
   - tmuxinator
-  - mdless
-  - travis
+  #- mdless
+  #- travis
 #docker-compose:
 #  - francescou/docker-compose-ui
 #  - v2tec/watchtower
