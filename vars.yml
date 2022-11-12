@@ -3,11 +3,8 @@ home: "{{ lookup('env','HOME') }}"
 github_token: "{{ lookup('env','GITHUB_TOKEN') }}"
 
 bpkg:
-  - gitwatch
-  - mc
   - xclip
 cargo:
-  - shellharden
   - difftastic
   - when-cli
 go:
@@ -15,44 +12,13 @@ go:
 pip:
   - awscli
   - awslogs
-  - virtualenv
-  - http-prompt
-  - git-sweep
-  - markdown
-  - ctop
-  - thefuck
-  - pipdeptree
-  - pip-review
   - yq
-  - organize-tool
-  - asciinema
-  - stormssh
-  - keep
-  - glances[all]
+  - thefuck
 npm:
   - diff-so-fancy
-  - graphqurl
-  - matrix-rain
-  - organize-cli
-  - serverless
-  - graphql
-  - graphqurl
-  - kubelive
-  - aws-amplify/cli
-  - npm-check-updates
-  # - api-spec-converter
 gem:
   - tmuxinator
-  - bundler
-  - bundle
-  - mdless
-  - travis
-  - thor
-  - rake
-  - ri
-  - erubis
-  - irb
-  - racc
+
 manual_common: # This commands should to be idempotent
   - sudo: no
     commands:
@@ -62,12 +28,9 @@ manual_common: # This commands should to be idempotent
     commands:
       - "chsh -s $(which zsh) {{ username }}"
 manual: "{{ common_manual }}"
+
 binary:
   - name: cs
     gzip: yes # this is not implemented yet, btw
     url: https://github.com/coursier/launchers/raw/master/cs-x86_64-apple-darwin.gz
-# docker-compose:
-#  - francescou/docker-compose-ui
-#  - v2tec/watchtower
-#  - astefanutti/kubebox # docker run -it --rm -v ~/.kube/:/home/node/.kube/:ro astefanutti/kubebox
-#  - portainer?
+

@@ -1,214 +1,47 @@
 brew:
-  - ansible
-  - asdf
-  - autossh
-  - awscli
-  - bison
-  - bpytop
   - chruby
-  - coursier/formulas/coursier
-  - curl
-  - derailed/k9s/k9s
-  - dos2unix
-  - exa
-  - figlet
-  - git
-  - git-extras
-  - gh
-  - glances
-  - gnu-sed
-  - gnupg
   - go
-  - graphviz
-  - gromgit/fuse/sshfs-mac
-  - helm
-  - htop
-  - httpie
-  - hub
-  - iperf
-  - iperf3
-  - isl
   - jenv
-  - jfrog-cli
-  - jmeter
-  - jq
-  - kcat
-  - knqyf263/pet/pet
-  - kompose
   - kubectx
-  - lazydocker
-  - lazygit
-  - lsd
-  - make
-  - maven
-  - midnight-commander
-  - minikube
   - navi
-  - ncdu
-  - neofetch
   - neovim
-  - netdata
   - node
-  - openjdk@11
-  - out-of-cheese-error/the-way/the-way
-  - paulp/extras/sbtx
+  - nvm
   - pipenv
   - pyenv
-  - q
-  - rclone
-  - ripgrep
-  - rsync
-  - ruby-install
   - rust
-  - shellcheck
-  - stern
-  - stow
-  - telnet
-  - terraform
-  - tldr
-  - tmate
   - tmux
-  - todo-txt
-  - tor
-  - travis
-  - vim
-  - virtuslab/scala-cli/scala-cli
-  - watch
-  - websocat
-  - wget
-  - yarn
+  - jq
+  - gh
+  - asdf
 tap:
   - homebrew/cask-fonts 
-  - coursier/formulas
-  - derailed/k9s
   - graalvm/tap
-  - homebrew/cask
-  - homebrew/cask-versions
-  - homebrew/core
-  - jesseduffield/lazydocker
-  - knqyf263/pet
-  - mistertea/et
-  - out-of-cheese-error/the-way
-  - paulp/extras
-  - scalacenter/bloop
-  - virtuslab/scala-cli
 cask:
-  - adobe-acrobat-reader
-  - adobe-creative-cloud
-  - alacritty
-  - altair-graphql-client
-  - amorphousdiskmark
-  - apptivate
-  - atom
-  - balenaetcher
-  - calibre
-  - caret
-  - cheatsheet
-  - code-notes
-  - cool-retro-term
-  - cryptomator
-  - cyberduck
-  - daisydisk
-  - dash
-  - dbeaver-community
-  - deluge
-  - disk-inventory-x
-  - docker
-  - dropbox
-  - epic-games
-  - evernote
-  - firefox
   - font-fira-code-nerd-font
   - font-hack-nerd-font
   - font-sauce-code-pro-nerd-font
   - font-ubuntu-mono-nerd-font
   - font-ubuntu-nerd-font
-  - gitkraken
-  - gitter
-  - google-chrome
-  - graphql-playground
-  - insomnia
-  - java
-  - java11
-  - java8
-  - jdk-mission-control
+  - docker
+  - graalvm-ce-java19
   - keepassxc
-  - key-codes
-  - keyboard-maestro
-  - kubernetic
-  - launchbar
-  - lens
-  - lepton
-  - macfuse
-  - miro
-  - mountain-duck
   - nextcloud
-  - notion
-  - openemu
-  - oracle-jdk
-  - osxfuse
-  - pgadmin4
-  - plex
-  - postman
-  - quicksilver
-  - rar
-  - retroarch
-  - send-to-kindle
-  - kindle
-  - slack
-  - spark
-  - spectacle
-  - spotify
-  - station
-  - steam
-  - sublime
-  - syncthing
-  - tiles
-  - tweeten
-  - typora
-  - usage
-  - virtualbox
   - visual-studio-code
-  - vlc
-  - xmind-zen
-  - keyboardcleantool
+  - syncthing
   - iterm2
+  - tiles
   - expressions
   - copyclip
+  - cheatsheet
+  - keyboardcleantool
+  - cryptomator
+
 manual_macos: [] # This commands need to be idempotent
 manual: "{{ manual_common + manual_macos }}"
+
 dmg:
   - url: https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=osx&lang=en-US
     name: FirefoxNightly
     type: dmg
-  - url: https://www.jetbrains.com/idea/download/download-thanks.html?platform=macJDK11&code=IIC
-    name: IntelliJIDEA
-    type: dmg
-  - url: https://www.odrive.com/downloaddesktop?platform=mac
-    name: odrive
-    type: dmg
-  - url: https://tunnelblick.net/release/Tunnelblick_3.7.8_build_5180.dmg
-    name: Tunnelblick
-    type: dmg
-  - url: https://pqrs.org/osx/karabiner/files/Karabiner-Elements-12.2.0.dmg
-    name: Karabiner
-    type: dmg
-## Apps to add
-# - Adobe Creative Cloud
-# - Adobe Acrobat Reader DC
-# - Logi Options
-# - Logi Bolt
-# - Enjoyable
-# - OpenVPN Connect
-# - Numbers
-# - Parsec
-# - Moonlight
-# - iMovie
-# - Obsidian
-# - Keynote
-# - Shadow
-# - GOG Galaxy
-# - Pages
-# - GarageBand
-# - ControllerMate
-  
+
