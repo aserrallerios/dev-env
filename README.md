@@ -5,9 +5,9 @@ Development Environment Configuration with Ansible
 
 # Prepare
 
-Log into Github and get an access token. You can use [copypaste.me](https://copypaste.me) to share passwords and snippets between devices.
+Log into GitHub and get an access token. You can use [copypaste.me](https://copypaste.me) to share passwords and snippets between devices.
 
-The Github token is required for the `sensible.dotfiles` installation.
+The GitHub token is required for the `sensible.dotfiles` installation.
 
 # Run it
 
@@ -35,12 +35,14 @@ Mostly tested on macOS.
 # What to do after running installation
 
 1. Join Syncthing
-2. Configure VSCode
+2. Log into Nextcloud
+3. Configure VSCode
 
 ## TODO
 
 - [ ] Fix bootstrap script exiting after brew commands during the first execution (super weird)
 - [ ] Organize files into folders
+- [ ] Update recipes to avoid using `command` or `shell`
 - [ ] Fix idempotency (OK vs changed)
 - [ ] Implement install vs update recipes
 - [ ] tmate vs gotty vs showterm vs termshare

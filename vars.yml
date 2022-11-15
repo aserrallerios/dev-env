@@ -10,7 +10,7 @@ cargo:
 go:
   - github.com/wallix/awless@latest
 pip:
-  - awscli
+  - awscliv2
   - awslogs
   - yq
   - thefuck
@@ -33,4 +33,3 @@ binary:
   - name: cs
     gzip: yes # this is not implemented yet, btw
     url: https://github.com/coursier/launchers/raw/master/cs-x86_64-apple-darwin.gz
-
