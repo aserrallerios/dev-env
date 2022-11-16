@@ -1,7 +1,11 @@
 brew:
+  - asdf
+  - awscli
   - chruby
+  - gh
   - go
   - jenv
+  - jq
   - kubectx
   - navi
   - neovim
@@ -11,9 +15,6 @@ brew:
   - pyenv
   - rust
   - tmux
-  - jq
-  - gh
-  - asdf
 tap:
   - homebrew/cask-fonts 
   - graalvm/tap
