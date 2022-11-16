@@ -10,7 +10,6 @@ cargo:
 go:
   - github.com/wallix/awless@latest
 pip:
-  - awscliv2
   - awslogs
   - yq
   - thefuck
