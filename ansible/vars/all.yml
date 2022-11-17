@@ -11,8 +11,8 @@ go:
   - github.com/wallix/awless@latest
 pip:
   - awslogs
-  - yq
   - thefuck
+  - yq
 npm:
   - diff-so-fancy
 gem:
