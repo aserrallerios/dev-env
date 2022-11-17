@@ -37,12 +37,14 @@ Mostly tested on macOS.
 
 1. Join Syncthing
 2. Log into Nextcloud
-3. Configure VSCode
+3. Configure VSCode (sync, gists, ...)
+4. Configure iTerm (fonts, shortcuts, drop-down, tmux, ...)
+5. Configure global macOS shortcuts
 
 ## TODO
 
 - [x] Fix bootstrap script exiting after brew commands during the first execution (super weird)
-- [ ] Organize files into folders
+- [x] Organize files into folders
 - [ ] Update recipes to avoid using `command` or `shell`
 - [ ] Fix idempotency (OK vs changed)
 - [ ] Implement install vs update recipes
