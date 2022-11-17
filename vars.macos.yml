@@ -15,6 +15,7 @@ brew:
   - pyenv
   - rust
   - tmux
+  - wget
 tap:
   - homebrew/cask-fonts 
   - graalvm/tap
