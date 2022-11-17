@@ -20,24 +20,24 @@ tap:
   - homebrew/cask-fonts 
   - graalvm/tap
 cask:
+  - cheatsheet
+  - copyclip
+  - cryptomator
+  - docker
+  - expressions
   - font-fira-code-nerd-font
   - font-hack-nerd-font
   - font-sauce-code-pro-nerd-font
   - font-ubuntu-mono-nerd-font
   - font-ubuntu-nerd-font
-  - docker
   - graalvm-ce-java19
-  - keepassxc
-  - nextcloud
-  - visual-studio-code
-  - syncthing
   - iterm2
-  - tiles
-  - expressions
-  - copyclip
-  - cheatsheet
+  - keepassxc
   - keyboardcleantool
-  - cryptomator
+  - nextcloud
+  - syncthing
+  - tiles
+  - visual-studio-code
 
 manual_macos: [] # This commands need to be idempotent
 manual: "{{ manual_common + manual_macos }}"
