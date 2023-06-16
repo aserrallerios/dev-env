@@ -1,4 +1,5 @@
 brew:
+  - python
   - asdf
   - awscli
   - chruby
