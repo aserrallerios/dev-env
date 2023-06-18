@@ -32,7 +32,6 @@ cask:
   - font-ubuntu-mono-nerd-font
   - font-ubuntu-nerd-font
   - font-meslo-lg-nerd-font
-  - graalvm-ce-java19
   - iterm2
   - keepassxc
   - keyboardcleantool
