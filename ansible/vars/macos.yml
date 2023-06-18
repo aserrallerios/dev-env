@@ -40,7 +40,7 @@ cask:
   - syncthing
   - tiles
   - visual-studio-code
-
+  - maccy
 manual_macos: [] # This commands need to be idempotent
 manual: "{{ manual_common + manual_macos }}"
 
