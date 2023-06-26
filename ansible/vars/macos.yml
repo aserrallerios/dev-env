@@ -24,7 +24,6 @@ tap:
   - graalvm/tap
 cask:
   - cheatsheet
-  - copyclip
   - cryptomator
   - docker
   - expressions
