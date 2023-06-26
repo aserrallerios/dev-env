@@ -5,6 +5,7 @@ brew:
   - chruby
   - gh
   - go
+  - hub
   - jenv
   - jq
   - kubectx
