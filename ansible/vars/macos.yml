@@ -8,6 +8,7 @@ brew:
   - hub
   - jenv
   - jq
+  - k9s
   - kubectx
   - navi
   - neovim
@@ -20,8 +21,9 @@ brew:
   - tmux
   - wget
 tap:
-  - homebrew/cask-fonts 
+  - derailed/k9s
   - graalvm/tap
+  - homebrew/cask-fonts 
 cask:
   - cheatsheet
   - cryptomator
