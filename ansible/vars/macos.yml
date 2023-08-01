@@ -5,6 +5,7 @@ brew:
   - chruby
   - gh
   - go
+  - helm
   - hub
   - jenv
   - jq
