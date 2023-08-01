@@ -10,8 +10,10 @@ cargo:
 go:
   - github.com/wallix/awless@latest
 pip:
+  - asciinema
   - awslogs
   - thefuck
+  - tldr
   - yq
 npm:
   - diff-so-fancy

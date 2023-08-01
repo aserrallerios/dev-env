@@ -18,7 +18,6 @@ brew:
   - pipenv
   - pyenv
   - rust
-  - tldr
   - tmux
   - wget
 tap:
