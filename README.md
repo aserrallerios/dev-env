@@ -37,9 +37,15 @@ Mostly tested on macOS.
 
 1. Join Syncthing
 2. Log into Nextcloud
-3. Configure VSCode (sync, gists, ...)
 4. Configure iTerm (fonts, shortcuts, drop-down, tmux, ...)
 5. Configure global macOS shortcuts
+6. Setup keyboard input languages
+7. Activate Tiles and other background apps
+8. Sync to VsCode
+9. Configure VsCode terminal
+10. Set VsCode gist token
+11. Sync to Firefox
+
 
 ## TODO
 
