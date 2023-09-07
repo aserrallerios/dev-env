@@ -19,6 +19,7 @@ brew:
   - gnupg
   - go
   - graphviz
+  - gron
   - gromgit/fuse/sshfs-mac
   - helm
   - htop
