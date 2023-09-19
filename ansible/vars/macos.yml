@@ -3,6 +3,7 @@ brew:
   - asdf
   - awscli
   - chruby
+  - fx
   - gh
   - go
   - gron
