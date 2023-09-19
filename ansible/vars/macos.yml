@@ -11,6 +11,7 @@ brew:
   - dos2unix
   - exa
   - figlet
+  - fx
   - git
   - git-extras
   - gh
