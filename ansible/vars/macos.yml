@@ -20,6 +20,7 @@ brew:
   - pipenv
   - pyenv
   - rust
+  - stern
   - tmux
   - wget
 tap:
