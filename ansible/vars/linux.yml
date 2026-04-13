@@ -68,15 +68,22 @@ aur:
 tap: []
 brew:
   - gcc
-  - chruby
-  - ruby-install
+  # REMOVED: chruby, ruby-install (replaced by mise)
   - kubectx
   - fzf
+  - mise
   - neofetch
   - kompose
   - landscaper
   - jfrog-cli-go
-  - exa
+  - bat
+  - eza
+  - fd
+  - git-delta
+  - sesh
+  - tealdeer
+  - uv
+  - zoxide
   # - yudai/gotty/gotty
 snap:
   # - docker # snap doesn't create the docker user & group, so it requires sudo

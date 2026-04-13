@@ -1,29 +1,29 @@
-#!/bin/bash
-set -euo pipefail
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+trap 'echo "[dev-env bootstrap] Failed at line $LINENO" >&2' ERR
 
 # DEFAULTS
 BRANCH="master"
+DRY_RUN=0
 
-# Use -gt 1 to consume two arguments per pass in the loop (e.g. each
-# argument has a corresponding value to go with it).
-# Use -gt 0 to consume one or more arguments per pass in the loop (e.g.
-# some arguments don't have a corresponding value to go with it such
-# as in the --default example).
-# note: if this is set to -gt 0 the /etc/hosts part is not recognized ( may be a bug )
-while [[ $# -gt 1 ]]
-do
-key="$1"
+usage() {
+    cat <<EOF
+dev-env bootstrap
+Usage: bootstrap.sh [--branch <name>] [--dry-run]
+Options:
+    --branch <name>  Use a different git branch (default: master)
+    --dry-run        Show actions without executing
+EOF
+}
 
-case $key in
-    -b|--branch)
-    BRANCH="$2"
-    shift # past argument
-    ;;
-    *)
-            # unknown option
-    ;;
-esac
-shift # past argument or value
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        -b|--branch) BRANCH="$2"; shift 2;;
+        --dry-run) DRY_RUN=1; shift;;
+        -h|--help) usage; exit 0;;
+        *) echo "Unknown argument: $1" >&2; usage; exit 1;;
+    esac
 done
 
 # Determine OS
@@ -82,12 +82,20 @@ esac
 
 # Bootstrap
 
+if [ "$DRY_RUN" -eq 1 ]; then
+    echo "[DRY-RUN] Would ensure git + ansible installed for $machine ($BITS-bit)";
+    echo "[DRY-RUN] Would clone/update dev-env branch $BRANCH";
+    echo "[DRY-RUN] Would run playbook template: $TEMPLATE";
+    exit 0
+fi
+
 if [ ! -d ~/.dev-env ]; then
-  git clone https://github.com/aserrallerios/dev-env.git ~/.dev-env
+    echo "Cloning dev-env ($BRANCH)";
+    git clone https://github.com/aserrallerios/dev-env.git ~/.dev-env
 fi
 
 cd ~/.dev-env
-git checkout $BRANCH
-git pull
+git checkout "$BRANCH" || true
+git pull --ff-only || true
 
-./run.sh $TEMPLATE
+./run.sh "$TEMPLATE"

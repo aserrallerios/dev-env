@@ -26,8 +26,8 @@ pip:
   - pip-review
   - stormssh
   - thefuck
-  - tldr
-  - virtualenv
+  # REMOVED: tldr (replaced by tealdeer brew package)
+  # REMOVED: virtualenv (replaced by uv)
   - yq
 npm:
   - diff-so-fancy

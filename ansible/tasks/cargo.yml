@@ -1,4 +1,10 @@
 ---
-- name: Install cargo app
+# Idempotent cargo install assuming crate name == binary name.
+# If a crate produces different binaries, adjust creates path accordingly.
+- name: Install cargo apps
   loop: "{{ cargo }}"
-  shell:  "cargo install {{ item }}"
+  shell: "cargo install {{ item }}"
+  args:
+    creates: "{{ ansible_env.HOME }}/.cargo/bin/{{ item }}"
+  register: cargo_install
+  changed_when: cargo_install is changed

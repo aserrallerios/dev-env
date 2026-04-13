@@ -1,4 +1,9 @@
 ---
+# Idempotent go installs. Assumes GOPATH default and that '{{ item }}' before '@' is binary.
 - name: Install go apps
-  shell: "go install {{ item }}"
   loop: "{{ go }}"
+  shell: "go install {{ item }}"
+  args:
+    creates: "{{ (ansible_env.GOBIN | default(ansible_env.HOME + '/go/bin')) }}/{{ (item.split('@')[0]).split('/')[-1] }}"
+  register: go_install
+  changed_when: go_install is changed

@@ -1,18 +1,21 @@
 brew:
   - python
-  - asdf
+  # REMOVED: asdf (replaced by mise)
   - autossh
   - awscli
   - bison
   - bpytop
-  - chruby
+  # REMOVED: chruby (replaced by mise)
   - coursier/formulas/coursier
   - curl
+  - bat
   - dos2unix
-  - exa
+  - eza
+  - fd
   - figlet
   - fx
   - git
+  - git-delta
   - git-extras
   - gh
   - glances
@@ -29,7 +32,7 @@ brew:
   - iperf
   - iperf3
   - isl
-  - jenv
+  # REMOVED: jenv (replaced by mise)
   - jfrog-cli
   - jmeter
   - jq
@@ -45,27 +48,31 @@ brew:
   - maven
   - midnight-commander
   - minikube
+  - mise
   - navi
   - ncdu
   - neofetch
   - neovim
   - netdata
   - node
-  - nvm
+  # REMOVED: nvm (replaced by mise)
   - openjdk@11
   - out-of-cheese-error/the-way/the-way
   - paulp/extras/sbtx
-  - pipenv
-  - pyenv
+  # REMOVED: pipenv (replaced by uv)
+  # REMOVED: pyenv (replaced by mise)
   - q
   - rclone
   - ripgrep
   - rsync
-  - ruby-install
+  # REMOVED: ruby-install (replaced by mise)
   - rust
+  - sesh
   - shellcheck
+  - uv
   - stern
   - stow
+  - tealdeer
   - telnet
   - terraform
   - tmate
@@ -77,6 +84,7 @@ brew:
   - virtuslab/scala-cli/scala-cli
   - watch
   - websocat
+  - zoxide
   - wget
   - yarn
 tap:
@@ -84,7 +92,7 @@ tap:
   - derailed/k9s
   - graalvm/tap
   - homebrew/cask
-  - homebrew/cask-fonts 
+  - homebrew/cask-fonts
   - homebrew/cask-versions
   - homebrew/core
   - jesseduffield/lazydocker
@@ -214,4 +222,3 @@ dmg:
 # - Pages
 # - GarageBand
 # - ControllerMate
-  
