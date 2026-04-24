@@ -4,14 +4,23 @@ brew:
   - autossh
   - awscli
   - bison
-  - bpytop
+  - bottom
+  - btop
+  # REMOVED: bpytop (replaced by btop)
   # REMOVED: chruby (replaced by mise)
   - coursier/formulas/coursier
   - curl
   - bat
+  - bottom
+  - cheat
+  - cloudflared
   - dos2unix
+  - dust
+  - difftastic
+  - doggo
   - eza
   - fd
+  - fzf
   - figlet
   - fx
   - git
@@ -29,6 +38,8 @@ brew:
   - htop
   - httpie
   - hub
+  - multipass
+  - hyperfine
   - iperf
   - iperf3
   - isl
@@ -44,6 +55,7 @@ brew:
   - lazydocker
   - lazygit
   - lsd
+  - procs
   - make
   - maven
   - midnight-commander
@@ -55,6 +67,7 @@ brew:
   - neovim
   - netdata
   - node
+  - anomalyco/tap/opencode
   # REMOVED: nvm (replaced by mise)
   - openjdk@11
   - out-of-cheese-error/the-way/the-way
@@ -65,6 +78,7 @@ brew:
   - rclone
   - ripgrep
   - rsync
+  - sd
   # REMOVED: ruby-install (replaced by mise)
   - rust
   - sesh
@@ -77,6 +91,8 @@ brew:
   - terraform
   - tmate
   - tmux
+  - ttyd
+  - tokei
   - todo-txt
   - tor
   - travis
@@ -84,10 +100,12 @@ brew:
   - virtuslab/scala-cli/scala-cli
   - watch
   - websocat
+  - xh
   - zoxide
   - wget
   - yarn
 tap:
+  - anomalyco/tap
   - coursier/formulas
   - derailed/k9s
   - graalvm/tap

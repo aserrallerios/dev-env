@@ -8,7 +8,7 @@ bpkg:
   - xclip
 cargo:
   - shellharden
-  - difftastic
+  # REMOVED: difftastic (moved to brew for faster install)
   - when-cli
 go:
   - github.com/wallix/awless@latest

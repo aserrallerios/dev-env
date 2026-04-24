@@ -77,14 +77,27 @@ brew:
   - landscaper
   - jfrog-cli-go
   - bat
+  - bottom
+  - btop
+  - cloudflared
+  - cheat
+  - difftastic
+  - doggo
+  - dust
   - eza
   - fd
   - git-delta
+  - hyperfine
+  - procs
+  - sd
   - sesh
   - tealdeer
   - uv
+  - tokei
+  - ttyd
+  - xh
   - zoxide
-  # - yudai/gotty/gotty
+  # REMOVED: yudai/gotty/gotty (replaced by ttyd)
 snap:
   # - docker # snap doesn't create the docker user & group, so it requires sudo
   - microk8s # install libselinux if error https://github.com/ubuntu/microk8s/pull/365
