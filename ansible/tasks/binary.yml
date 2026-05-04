@@ -1,5 +1,16 @@
 --- # global vs local?
+- name: Check if binaries already exist
+  stat:
+    path: "/usr/local/bin/{{ item.name }}"
+  loop: "{{ binary }}"
+  register: binary_stat
+
 - name: Download binary files
   become: yes
-  get_url: url={{ item.url }} dest=/usr/local/bin/{{ item.name }} validate_certs=no mode=0755 force=yes
-  loop: "{{ binary }}"
+  get_url:
+    url: "{{ item.item.url }}"
+    dest: "/usr/local/bin/{{ item.item.name }}"
+    validate_certs: no
+    mode: 0755
+  loop: "{{ binary_stat.results }}"
+  when: not item.stat.exists

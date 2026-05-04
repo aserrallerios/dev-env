@@ -1,10 +1,16 @@
 ---
-- name: Pacman update cache & upgrade
+- name: Update pacman cache
   become: yes
   pacman:
     update_cache: yes
+
+- name: Upgrade system (run manually with --tags upgrade if needed)
+  become: yes
+  pacman:
     upgrade: yes
-- name: Install pacman packages # Add --needed flag when possible to avoid reinstall already present packages
+  tags: upgrade
+
+- name: Install pacman packages
   become: yes
   pacman:
     name: "{{ pacman }}"
