@@ -81,6 +81,7 @@ brew:
   - sd
   # REMOVED: ruby-install (replaced by mise)
   - rust
+  - rtk # rust token killer (reduce agent token usage)
   - sesh
   - shellcheck
   - uv
